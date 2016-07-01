@@ -34,4 +34,5 @@ public class Customer extends Person {
         return monitorSize;
     }
 
+
 }
