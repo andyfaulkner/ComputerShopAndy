@@ -1,5 +1,6 @@
 package ProgramLogic;
 
+import ComputerStoreGUI.ComputerStoreGUI;
 import DatabaseLogic.MySQLLogic;
 
 import java.util.Scanner;
@@ -15,12 +16,13 @@ public class Program {
 
     public static void main(String[]args) {
 
+//         new ComputerStoreGUI();
         menu();
 
     }
 
     static void menu(){
-        int choice;
+        int choice = 0;
         do {
             System.out.println("----- Menu -----");
             System.out.println("1. Add a new computer or customer");
@@ -43,7 +45,7 @@ public class Program {
                     addSubMenu();
                     break;
                 case 2:
-//                    //method to add the table to the database
+                    //method to add the table to the database
 //                    try {
 //                        MySQLLogic.implementDb();
 //                    } catch (Exception e) {
